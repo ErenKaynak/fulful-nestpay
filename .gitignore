@@ -1,0 +1,7 @@
+.DS_Store
+tmp/
+vendor/
+wc-sanal-pos-nestpay/vendor/
+nestpay-test.html
+*.log
+

@@ -1,0 +1,38 @@
+{
+  "name": "sanal-pos/wc-sanal-pos-nestpay",
+  "description": "WooCommerce payment gateway for Payten/Nestpay 3D Pay Hosting.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "mews/pos": "^2.0",
+    "php-http/curl-client": "^2.2",
+    "nyholm/psr7": "^1.8",
+    "symfony/event-dispatcher": "^5.4 || ^6.0 || ^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SanalPos\\Nestpay\\": "includes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SanalPos\\Nestpay\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    },
+    "platform": {
+      "php": "8.3.32"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
